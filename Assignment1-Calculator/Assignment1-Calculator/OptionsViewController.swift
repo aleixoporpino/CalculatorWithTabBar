@@ -47,6 +47,7 @@ class OptionsViewController: UIViewController {
     // Result Examples
     @IBOutlet weak var numbersResult: UIButton!
     @IBOutlet weak var operatorsResult: UIButton!
+    @IBOutlet weak var applyChangesButton: UIButton!
     
     // Button colors variables
     private var numbersColors = ButtonColor(bgRed: 0.0,bgGreen: 0.0,bgBlue: 0.0,txtRed: 0.0,txtGreen: 0.0,txtBlue: 0.0)
@@ -69,6 +70,7 @@ class OptionsViewController: UIViewController {
         }
         setSlidersValues()
         changeColors()
+        changeApplyChangesColors()
     }
     
     // Set initially the sliders values
@@ -154,17 +156,27 @@ class OptionsViewController: UIViewController {
     }
     // Apply the selected colors
     @IBAction func onApplyChanges() {
+        changeApplyChangesColors()
+        
         let encodedNumbersColors = NSKeyedArchiver.archivedData(withRootObject: numbersColors)
         defaults.set(encodedNumbersColors, forKey:"numbersColors")
         
         let encodedOperatorsColors = NSKeyedArchiver.archivedData(withRootObject: operatorsColors)
         defaults.set(encodedOperatorsColors, forKey:"operatorsColors")
         
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        //let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
-        self.present(nextViewController, animated:true, completion:nil)
+        //let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
+        //self.present(nextViewController, animated:true, completion:nil)
     }
     
+    func changeApplyChangesColors() {
+        applyChangesButton.backgroundColor = UIColor(red: CGFloat(numbersColors.bgRed), green: CGFloat(numbersColors.bgGreen), blue:
+        CGFloat(numbersColors.bgBlue), alpha: 1.0)
+        
+        applyChangesButton.setTitleColor(UIColor(red: CGFloat(numbersColors.txtRed), green: CGFloat(numbersColors.txtGreen), blue:
+        CGFloat(numbersColors.txtBlue), alpha: 1.0), for: .normal)
+        
+    }
     
 }

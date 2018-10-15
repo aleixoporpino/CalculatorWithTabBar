@@ -12,6 +12,7 @@
 		8B001A0921545C6D003BCE06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B001A0721545C6D003BCE06 /* Main.storyboard */; };
 		8B001A0B21545C6F003BCE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B001A0A21545C6F003BCE06 /* Assets.xcassets */; };
 		8B001A0E21545C6F003BCE06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B001A0C21545C6F003BCE06 /* LaunchScreen.storyboard */; };
+		8B0F4B2B2174121800EA1DFE /* ScientificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0F4B2A2174121800EA1DFE /* ScientificViewController.swift */; };
 		8B4DE36F215DA4C800E408F7 /* launch-calculator-top.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4DE36D215DA4C800E408F7 /* launch-calculator-top.png */; };
 		8B4DE370215DA4C800E408F7 /* launch-calculator-botton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4DE36E215DA4C800E408F7 /* launch-calculator-botton.png */; };
 		8B4DE372215DAD0600E408F7 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4DE371215DAD0600E408F7 /* background.png */; };
@@ -24,6 +25,7 @@
 		8B63E11021585DF600522AEB /* app_icon87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B63E10D21585DF500522AEB /* app_icon87x87.png */; };
 		8B63E11121585DF600522AEB /* app_icon58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B63E10E21585DF600522AEB /* app_icon58x58.png */; };
 		8BBD90BD2156FEC500A0916F /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD90BC2156FEC500A0916F /* Calculator.swift */; };
+		8BC423412172DAF700F8CF7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC423402172DAF700F8CF7C /* TabBarViewController.swift */; };
 		8BFB69C8216FA2E2005CB1E0 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB69C7216FA2E2005CB1E0 /* OptionsViewController.swift */; };
 		8BFB69CC216FC0DA005CB1E0 /* ButtonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFB69CB216FC0DA005CB1E0 /* ButtonColor.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,7 @@
 		8B001A0A21545C6F003BCE06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B001A0D21545C6F003BCE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B001A0F21545C6F003BCE06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0F4B2A2174121800EA1DFE /* ScientificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScientificViewController.swift; sourceTree = "<group>"; };
 		8B4DE36D215DA4C800E408F7 /* launch-calculator-top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-calculator-top.png"; sourceTree = "<group>"; };
 		8B4DE36E215DA4C800E408F7 /* launch-calculator-botton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-calculator-botton.png"; sourceTree = "<group>"; };
 		8B4DE371215DAD0600E408F7 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		8B63E10D21585DF500522AEB /* app_icon87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon87x87.png; sourceTree = "<group>"; };
 		8B63E10E21585DF600522AEB /* app_icon58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon58x58.png; sourceTree = "<group>"; };
 		8BBD90BC2156FEC500A0916F /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		8BC423402172DAF700F8CF7C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		8BFB69C7216FA2E2005CB1E0 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		8BFB69CB216FC0DA005CB1E0 /* ButtonColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +106,8 @@
 				8B4DE36D215DA4C800E408F7 /* launch-calculator-top.png */,
 				8BFB69C7216FA2E2005CB1E0 /* OptionsViewController.swift */,
 				8BFB69CB216FC0DA005CB1E0 /* ButtonColor.swift */,
+				8BC423402172DAF700F8CF7C /* TabBarViewController.swift */,
+				8B0F4B2A2174121800EA1DFE /* ScientificViewController.swift */,
 			);
 			path = "Assignment1-Calculator";
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				8BFB69C8216FA2E2005CB1E0 /* OptionsViewController.swift in Sources */,
 				8BFB69CC216FC0DA005CB1E0 /* ButtonColor.swift in Sources */,
 				8BBD90BD2156FEC500A0916F /* Calculator.swift in Sources */,
+				8B0F4B2B2174121800EA1DFE /* ScientificViewController.swift in Sources */,
+				8BC423412172DAF700F8CF7C /* TabBarViewController.swift in Sources */,
 				8B001A0421545C6D003BCE06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

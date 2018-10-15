@@ -55,6 +55,18 @@ class Calculator {
         case "sin":
             lastNumber = sin(lastNumber)
             pressedEquals = false
+        case "tan":
+            lastNumber = tan(lastNumber)
+            pressedEquals = false
+        case "x2":
+            lastNumber = pow(lastNumber, 2)
+            pressedEquals = false
+        case "x3":
+            lastNumber = pow(lastNumber, 3)
+            pressedEquals = false
+        case "10x":
+            lastNumber = pow(10, lastNumber)
+            pressedEquals = false
         case "%":
             if firstNumber != nil {
                 lastNumber = firstNumber! * (lastNumber / 100)

@@ -1,19 +1,14 @@
 //
-//  ViewController.swift
+//  ScientificViewController.swift
 //  Assignment1-Calculator
-//  App Description: A simple calculator with all basic operations with additional
-//  cosine, sine, square root and PI.
 //
-//  Created by Jose Aleixo Porpino Filho on 2018-09-22.
-//  Student ID 301005491
+//  Created by Aleixo Porpino Filho on 2018-10-14.
+//  Copyright © 2018 Porpapps. All rights reserved.
 //
-//  Version 1.0.0
 
 import UIKit
 
-
-// Control class of the main view calculator
-class ViewController: UIViewController {
+class ScientificViewController: UIViewController {
     private let defaults = UserDefaults.standard
     private var userTyped = false
     private var lastButtonClicked:String? = nil;
@@ -25,8 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet var operatorsButton: [UIButton]!
     @IBOutlet var numbersButton: [UIButton]!
     
-    
-    // Set number 0 in the calculator label in the begining of load
     override func viewDidLoad() {
         super.viewDidLoad()
         lblResult.text = "0"
@@ -68,7 +61,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     // Clear event method reset all the calculator operations
     @IBAction private func onClickClear(_ sender: UIButton) {
         userTyped = false
@@ -96,7 +89,7 @@ class ViewController: UIViewController {
         }
         lastButtonClicked = buttonText
         userTyped = true
-            
+        
     }
     
     @IBAction private func onClickOptions(_ sender:UIButton) {
@@ -114,7 +107,9 @@ class ViewController: UIViewController {
             if (lastButtonClicked != operand ||
                 (operand == "=" || operand == "π"
                     || operand == "√" || operand == "±"
-                    || operand == "cos" || operand == "sin")) {
+                    || operand == "cos" || operand == "sin"
+                    || operand == "x2" || operand == "x3"
+                    || operand == "10x")) {
                 
                 // Exception handle to prevent crash
                 do {
@@ -174,6 +169,4 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }
-
